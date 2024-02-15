@@ -41,7 +41,7 @@ submitButton.addEventListener('click', (e)=>{
 	} else {
 		allMembers.push(Member.createMember());
 	}
-	UI.renderList()
+	UI.renderList();
 	console.log(allMembers);
 });
 
@@ -49,7 +49,7 @@ submitButton.addEventListener('click', (e)=>{
 
 class UI {
 	static renderList () {
-		memberList.textContent = '';
+		memberList.textContent = "";
 		allMembers.forEach((member) =>{
 			const memberLi = document.createElement('li');
 			memberList.appendChild(memberLi);
